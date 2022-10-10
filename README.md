@@ -4,7 +4,7 @@
 Write a single command line PHP script named `importer.php` to perform the following actions:
 
 1. Connect a local SQLite database named `serviceline.db`. This database should be stored on disk and not in memory.
-2. Create a table named `customer` to store the data in `AAA1-Customers.csv`.
+2. Create a table named `customer` to store the data in `AAA1-Customers.csv`. You are free to design the structure of the table, and your program is responsible for creating the table.
 3. Import the data from `AAA1-Customers.csv` into the `customer` table.
 4. On completion, print the number of customers that were created or updated.
 
