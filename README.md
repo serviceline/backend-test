@@ -14,7 +14,7 @@ Write a single command line PHP script named `importer.php` to perform the follo
 - You're free to include any open source libraries you'd like to make the task easier.
 - Please contain the answer to a single file named `importer.php`. You're free to use any architectural style you wish.
 - Empty values should be inserted as `null` wherever possible.
-- Create indexes on the `customer` table where necessary - assume these can get quite large.
+- (Optional) Create indexes on the `customer` table where you may think necessary.
 - The following command will be used to execute the script:
 
 ```bash
@@ -24,7 +24,7 @@ php importer.php AAA1-Customers.csv
 - Output an error if the filepath passed in as and argument to the script does not exist.
 
 ## Customer Notes
-- A unique, single column, primary key is required.
+- A unique, single column, primary key that is independendent from the customer number is required.
 - A `customer` record should be created if it does not already exist based on the "CustomerNumber" column, updated otherwise.
 - A valid `customer` record requires a non-empty "CustomerNumber" and either a non-empty "FirstName" or non-empty "LastName" value.
 - Invalid email addresses should be nullified.
